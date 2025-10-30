@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding-left: 0;
+}
+
+body,
+blockquote[class],
+figure[class],
+fieldset[class] {
+    margin: 0;
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+p[class],
+ul[class],
+ol[class],
+dl[class] {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dd[class] {
+    margin-left: 0;
+}
+
+fieldset[class] {
+    padding: 0;
+    border: none;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+address[class] {
+    font-style: normal;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p:not([class]) {
+    margin-bottom: 24px;
+}
+
+p:not([class]):last-child {
+    margin-bottom: 0;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+}
+
+a[class] {
+    display: inline-flex;
+    color: currentcolor;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+svg * {
+    transition-property: fill, stroke;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: currentcolor;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    html {
+        scroll-behavior: auto !important;
+    }
+}
