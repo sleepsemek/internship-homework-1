@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "npx stylelint \"**/*.css\" --fix"
   },
   "private": true,
   "devDependencies": {
     "stylelint": "^16.25.0",
-    "stylelint-config-standard": "^39.0.1"
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-order": "^7.0.0"
   }
 }

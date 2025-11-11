@@ -25,15 +25,15 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
     color: var(--color-dark);
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 h1, .h1 {
-    font-weight: 600;
     font-size: 64px;
+    font-weight: 600;
     line-height: 1.1;
 }
 
@@ -41,12 +41,12 @@ a {
     position: relative;
 
     &::before {
-        content: '';
         position: absolute;
         top: 50%;
         left: 50%;
-        translate: -50% -50%;
         width: 44px;
+        content: '';
+        translate: -50% -50%;
         aspect-ratio: 1;
     }
 }
@@ -59,9 +59,13 @@ a {
 }
 
 .gallery {
-    height: 100dvh;
     display: grid;
     grid-auto-flow: column;
+    height: 100dvh;
+}
+
+.gallery__element {
+    text-wrap: wrap;
 }
 
 .gallery__element img {
@@ -70,9 +74,10 @@ a {
     object-fit: cover;
 }
 
+/* Нормализовал и округлил fr вместо перевода в %, т.к. пропорции в grid удобнее */
 .gallery--3-rows {
-    grid-template-rows: 288fr 185fr 248fr;
-    grid-template-columns: 458fr 199fr 165fr 226fr 232fr;
+    grid-template-rows: 40fr 25fr 35fr;
+    grid-template-columns: 36fr 16fr 13fr 18fr 18fr;
 }
 
 .gallery__element--wide {
@@ -94,13 +99,14 @@ a {
 .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: end;
-    row-gap: 30%;
+    align-items: center;
+    row-gap: 35%;
     padding: 48px 64px;
 }
 
 .hero__title {
+    width: min-content;
     text-transform: uppercase;
 }
 
@@ -112,7 +118,7 @@ a {
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     padding: 64px;
     background-color: var(--color-gray-3);
     color: var(--color-gray-6);
@@ -129,7 +135,6 @@ a {
     }
 
     .hero {
-        row-gap: 20%;
         padding: 48px 64px;
     }
 
@@ -154,18 +159,19 @@ a {
     }
 
     .hero, .description {
-        padding: 32px;
-        row-gap: 12px;
         align-items: start;
+        row-gap: 12px;
+        padding: 32px;
     }
 
     .hero__title {
+        width: auto;
         font-size: 42px;
     }
 
     .socials {
-        width: 100%;
         column-gap: 16px;
+        width: 100%;
     }
 }
 
