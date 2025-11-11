@@ -5,15 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preload" href="fonts/Inter24pt-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Inter24pt-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <title>COMPANY CULTURE</title>
 </head>
 <body>
     <main class="gallery gallery--3-rows">
-        <header class="gallery__element gallery__element--tall hero">
+        <section class="gallery__element gallery__element--tall hero">
             <h1 class="hero__title">Company Culture</h1>
             <address class="hero__socials socials">
                 <a href="#" aria-label="Our Instagram" class="socials__link">
@@ -32,7 +32,7 @@
                     </svg>
                 </a>
             </address>
-        </header>
+        </section>
 
         <div class="gallery__element description">
             <p>
@@ -41,45 +41,59 @@
         </div>
 
         <picture class="gallery__element gallery__element--tall gallery__element--wide">
-            <source srcset="images/1.webp 1x, images/1@2x.webp 2x"
+            <source srcset="images/webp/1.webp, images/webp/1@2x.webp 2x"
                     type="image/webp">
-            <img src="images/1.webp" alt="Portrait of the woman in hat against the green background" width="364" height="473">
+            <source srcset="images/jpg/1.jpg, images/jpg/1@2x.jpg 2x"
+                    type="image/jpg">
+            <img src="images/jpg/1.jpg" alt="Portrait of the woman in hat against the green background" width="364" height="473">
         </picture>
 
         <picture class="gallery__element">
-            <source srcset="images/2.webp 1x, images/2@2x.webp 2x"
+            <source srcset="images/webp/2.webp, images/webp/2@2x.webp 2x"
                     type="image/webp">
-            <img src="images/2.webp" alt="A cup of coffee on beige background" width="199" height="247">
+            <source srcset="images/jpg/2.jpg, images/jpg/2@2x.jpg 2x"
+                    type="image/jpg">
+            <img src="images/jpg/2.jpg" alt="A cup of coffee on beige background" width="199" height="247">
         </picture>
 
         <div class="gallery__element gallery__element--brown"></div>
 
         <picture class="gallery__element">
-            <source srcset="images/3.webp 1x, images/3@2x.webp 2x"
+            <source srcset="images/webp/3.webp, images/webp/3@2x.webp 2x"
                     type="image/webp">
-            <img src="images/3.webp" alt="A smiling woman with curly hair" width="226" height="288">
+            <source srcset="images/jpg/3.jpg, images/jpg/3@2x.jpg 2x"
+                    type="image/jpg">
+            <img src="images/jpg/3.jpg" alt="A smiling woman with curly hair" width="226" height="288">
         </picture>
 
         <picture class="gallery__element gallery__element--tall">
-            <source srcset="images/4-sm.webp 1x, images/4-sm@2x.webp 2x" media="(max-width: 1200px)"
+            <source srcset="images/webp/4-sm.webp, images/webp/4-sm@2x.webp 2x" media="(max-width: 1200px)"
                     type="image/webp">
-            <source srcset="images/4.webp 1x, images/4@2x.webp 2x"
+            <source srcset="images/jpg/4-sm.jpg, images/jpg/4-sm@2x.jpg 2x" media="(max-width: 1200px)"
+                    type="image/jpg">
+            <source srcset="images/webp/4.webp, images/webp/4@2x.webp 2x"
                     type="image/webp">
-            <img src="images/4.webp" alt="A bright room with a door wide open" width="226" height="432">
+            <source srcset="images/jpg/4.jpg, images/jpg/4@2x.jpg 2x"
+                    type="image/jpg">
+            <img src="images/jpg/4.jpg" alt="A bright room with a door wide open" width="226" height="432">
         </picture>
 
         <picture class="gallery__element">
-            <source srcset="images/5.webp 1x, images/5@2x.webp 2x"
+            <source srcset="images/webp/5.webp, images/webp/5@2x.webp 2x"
                     type="image/webp">
-            <img src="images/5.webp" alt="A woman in a gray coat with flowers" width="232" height="288">
+            <source srcset="images/jpg/5.jpg, images/jpg/5@2x.jpg 2x"
+                    type="image/jpg">
+            <img src="images/jpg/5.jpg" alt="A woman in a gray coat with flowers" width="232" height="288">
         </picture>
 
         <div class="gallery__element gallery__element--red"></div>
 
         <picture class="gallery__element">
-            <source srcset="images/6.webp 1x, images/6@2x.webp 2x"
+            <source srcset="images/webp/6.webp 1x, images/webp/6@2x.webp 2x"
                     type="image/webp">
-            <img src="images/6.webp" alt="A man with a finger raised at his lips" width="232" height="247">
+            <source srcset="images/jpg/6.jpg 1x, images/jpg/6@2x.jpg 2x"
+                    type="image/jpg">
+            <img src="images/jpg/6.jpg" alt="A man with a finger raised at his lips" width="232" height="247">
         </picture>
     </main>
 </body>
